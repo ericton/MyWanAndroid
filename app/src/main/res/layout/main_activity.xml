@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/bnv_main_activity"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnv_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="#f1f1f1"
+        app:menu="@menu/bottom_navigation_main"
+        app:labelVisibilityMode="labeled"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:itemTextColor="@drawable/nav_item_color_state"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
