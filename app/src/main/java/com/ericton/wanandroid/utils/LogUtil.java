@@ -11,6 +11,7 @@ import com.ericton.wanandroid.BuildConfig;
 public class LogUtil {
 
     public static void i(String tag,String message) {
+	Log.i("test");
         if (BuildConfig.DEBUG) {
             Log.i(tag,message);
         }
