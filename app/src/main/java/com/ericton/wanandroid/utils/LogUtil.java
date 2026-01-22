@@ -12,7 +12,7 @@ public class LogUtil {
 
     public static void i(String tag,String message) {
         //debug环境才打印日志    	
-        if (BuildConfig.DEBUG) {
+        if (true) {
             Log.i(tag,message);
         }
     }
