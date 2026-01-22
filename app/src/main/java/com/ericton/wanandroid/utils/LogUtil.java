@@ -11,7 +11,7 @@ import com.ericton.wanandroid.BuildConfig;
 public class LogUtil {
 
     public static void i(String tag,String message) {
-        //debug环境才打印日志   	
+        //debug环境才打印日志 	
         if (BuildConfig.DEBUG) {
             Log.i(tag,message);
         }
