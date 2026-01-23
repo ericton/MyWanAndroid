@@ -1,0 +1,23 @@
+{
+	"name": "@changan-incall/new-ushare",
+	"version": "0.0.5",
+	"description": "home-新接口优享",
+	"packageName": "micro.cn.com.qiyuan.newUshare",
+	"build": "5",
+	"platform": "mobile",
+	"iosMinSdkVersion": "0.0.1",
+	"androidMinSdkVersion": "0.0.1",
+	"compileSdkVersion": "0.0.1",
+	"targetSdkVersion": "0.0.3",
+	"main": "index.js",
+	"scripts": {},
+	"author": "202200933 <202200933@any3.com>",
+	"license": "ISC",
+	"publishConfig": {
+		"registry": "http://tspdemo.changan.com.cn/nexus/repository/npmhosted/"
+	},
+	"dependencies": {
+		"dayjs": "^1.11.11",
+		"vant": "^2.12.54"
+	}
+}

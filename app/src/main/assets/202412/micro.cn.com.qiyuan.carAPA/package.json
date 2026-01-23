@@ -1,0 +1,21 @@
+{
+	"name": "@changan-incall/home-car-APA",
+	"version": "0.0.26",
+	"description": "home-智能泊车",
+	"packageName": "micro.cn.com.qiyuan.carAPA",
+	"build": "26",
+	"platform": "mobile",
+	"iosMinSdkVersion": "0.0.1",
+	"androidMinSdkVersion": "0.0.1",
+	"compileSdkVersion": "0.0.1",
+	"targetSdkVersion": "0.0.3",
+	"main": "index.js",
+	"scripts": {
+		"publish": "npm publish"
+	},
+	"author": "tao <202203862@any3.com>",
+	"license": "ISC",
+	"publishConfig": {
+		"registry": "http://tspdemo.changan.com.cn/nexus/repository/npmhosted/"
+	}
+}

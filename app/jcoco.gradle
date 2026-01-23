@@ -1,0 +1,61 @@
+apply plugin: 'jacoco'
+
+jacoco {
+
+    toolVersion = "0.8.8"
+}
+
+android {
+    defaultPublishConfig "debug"
+    buildTypes {
+        debug {
+            /**打开覆盖率统计开关**/
+            testCoverageEnabled = true
+        }
+    }
+}
+
+//源代码路径，你有多少个module，你就在这写多少个路径
+def coverageSourceDirs = [
+        '../app/src/main/java',
+]
+
+//class文件路径，就是我上面提到的class路径，看你的工程class生成路径是什么，替换我的就行
+def coverageClassDirs = [
+        '../app/build/intermediates/javac/debug/classes',
+]
+
+//这个就是具体解析ec文件的任务，会根据我们指定的class路径、源码路径、ec路径进行解析输出
+//如果没有自动生成 覆盖率报告的话, 可以执行这个task 手动生成
+task jacocoTestReport(type: JacocoReport) {
+
+    group = "Reporting"
+    description = "Generate Jacoco coverage reports after running tests."
+    reports {
+//        xml.enabled = true
+//        html.enabled = true
+    }
+
+    classDirectories = files(files(coverageClassDirs).files.collect {
+        fileTree(dir: it,
+                // 过滤不需要统计的class文件
+                excludes: ['**/R*.class',
+                           '**/*$InjectAdapter.class',
+                           '**/*$ModuleAdapter.class',
+                           '**/*$ViewInjector*.class',
+                           '**/I*.class',
+                           '**/*ForTest.class',
+                           '**/MenuItemManager.class',
+                           '**/AudioPictureSettingManager.class',
+                           '**/audiocontrol/**/*.class',
+                           '**/audiopicturesetting/**/*.class',
+                           '**/bean/**/*.class',
+                           '**/database/**/*.class'
+
+                ])
+    })
+
+    sourceDirectories = files(coverageSourceDirs)
+    //设备不同 coverage.ec 的名字会发生变化
+    executionData = files("$buildDir/files/test/coverage.ec")
+}

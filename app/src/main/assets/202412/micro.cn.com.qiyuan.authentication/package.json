@@ -1,0 +1,19 @@
+{
+	"name": "@changan-incall/home-authentication",
+	"version": "0.0.1",
+	"description": "home-实名认证",
+	"packageName": "micro.cn.com.qiyuan.authentication",
+	"build": "1",
+	"platform": "mobile",
+	"iosMinSdkVersion": "0.0.1",
+	"androidMinSdkVersion": "0.0.1",
+	"compileSdkVersion": "0.0.1",
+	"targetSdkVersion": "0.0.3",
+	"main": "index.js",
+	"scripts": {},
+	"author": "202200933 <202200933@any3.com>",
+	"license": "ISC",
+	"publishConfig": {
+		"registry": "http://tspdemo.changan.com.cn/nexus/repository/npmhosted/"
+	}
+}

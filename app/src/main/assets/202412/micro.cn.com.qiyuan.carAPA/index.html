@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width = device-width,initial-scale = 1, initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src * gap://ready file://* data: blob: cloudwise-agent: *; style-src 'self' 'unsafe-inline' *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *"
+    />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      html,
+      body,
+      div,
+      span,
+      applet,
+      button,
+      select,
+      section,
+      input,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td {
+        -webkit-tap-highlight-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-style: inherit;
+        font-size: 100%;
+        vertical-align: baseline;
+        box-sizing: border-box;
+        border: none;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        text-size-adjust: none;
+      }
+      body {
+        color: #000;
+        background: #fff;
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        text-size-adjust: none;
+      }
+      ol,
+      ul,
+      li,
+      ol {
+        list-style: none;
+      }
+      table {
+        border-collapse: separate;
+        border-spacing: 0;
+        vertical-align: middle;
+      }
+      caption,
+      th,
+      td {
+        text-align: left;
+        font-weight: normal;
+        vertical-align: middle;
+      }
+      a img {
+        border: none;
+      }
+      * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        box-sizing: border-box;
+      }
+      input {
+        -webkit-user-select: auto;
+      }
+      @media (orientation: landscape) {
+        html.ipad.ios7 > body {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          height: 672px !important;
+        }
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .pswp__top-bar {
+        top: 30px !important;
+      }
+      video:fullscreen {
+        object-fit: contain !important;
+      }
+      .amap-logo {
+        display: none !important;
+        opacity: 0 !important;
+      }
+      .amap-copyright {
+        opacity: 0;
+      }
+      .amap-container {
+        background-color: transparent !important;
+      }
+    </style>
+    <script type="text/javascript" src="../cordova.js"></script>
+   
+    <style type="text/css">
+      :root {
+        --incall-primary-color: #296DB9;
+--incall-primary-color2: #296DB9;
+--incall-success-color: #00B379;
+--incall-danger-color: #E64049;
+--incall-warning-color: #FFB30F;
+--incall-orange-color: #fd603a;
+--incall-disabled-color: #919294;
+--incall-text-color: #252626;
+--incall-text-color2: #575859;
+--incall-text-color3: #919294;
+--incall-text-color4: #bbbdbf;
+--incall-primary-background: #296DB91f;
+--incall-background: #F5F6FA;
+--incall-background2: #ffffff;
+--incall-border-color: #F5F6F7;
+--incall-border-color2: #D2D4D6;
+--incall-border-color3: #e3e6e8;
+--incall-icon-color: #919294;
+--incall-icon-color2: #27354F;
+--incall-linear-background: linear-gradient(180deg, #c7d5e9 0%, #e9eef7 33.07%, #f2f3f7 62.25%, #f5f5f7 100%);
+--incall-button-radius: 24px;
+      }
+
+      .incall-theme-dark {
+        --incall-primary-color: #3A99FD;
+--incall-success-color: #00B379;
+--incall-danger-color: #E64049;
+--incall-warning-color: #FFB30F;
+--incall-orange-color: #fd603a;
+--incall-disabled-color: #919294;
+--incall-text-color: #fffffff5;
+--incall-text-color2: #ffffff99;
+--incall-text-color3: #ffffff7a;
+--incall-text-color4: #ffffff52;
+--incall-background: #171B24;
+--incall-background2: #202632;
+--incall-border-color: #ffffff14;
+--incall-border-color2: #ffffff29;
+--incall-border-color3: rgba(255, 255, 255, 0.12);
+--incall-icon-color: #ffffff7a;
+--incall-icon-color2: #fffffff5;
+--incall-linear-background: #171b24;
+--incall-button-radius: 24px;
+      }
+    </style>
+  <link href="assets/css/apaTips.css" rel="prefetch"><link href="assets/css/main.css" rel="prefetch"><link href="assets/js/apaTips.js" rel="prefetch"><link href="assets/js/main.js" rel="prefetch"><link href="assets/css/app.css" rel="preload" as="style"><link href="assets/js/app.js" rel="preload" as="script"><link href="assets/css/app.css" rel="stylesheet"></head>
+  <body>
+    <noscript>
+      <strong>We're sorry but cn.com.incall.home doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  <script type="text/javascript" src="assets/js/app.js"></script></body>
+</html>

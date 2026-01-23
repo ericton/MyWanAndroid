@@ -1,0 +1,24 @@
+{
+	"name": "@changan-incall/control-history",
+	"packageName": "micro.cn.com.qiyuan.controlHistory",
+	"version": "0.0.1",
+	"build": "1",
+	"platform": "mobile",
+	"iosMinSdkVersion": "0.0.1",
+	"androidMinSdkVersion": "0.0.1",
+	"compileSdkVersion": "0.0.1",
+	"targetSdkVersion": "0.0.3",
+	"description": "home-远控操作历史",
+	"main": "index.js",
+	"scripts": {
+		"publish": "npm publish"
+	},
+	"author": "lili <202200933@any3.com>",
+	"license": "ISC",
+	"publishConfig": {
+		"registry": "http://tspdemo.changan.com.cn/nexus/repository/npmhosted/"
+	},
+	"dependencies": {
+		"dayjs": "^1.11.11"
+	}
+}

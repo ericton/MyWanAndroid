@@ -1,0 +1,21 @@
+{
+	"name": "@changan-incall/home-one-button-start-create",
+	"packageName": "micro.cn.com.qiyuan.oneButtonStartCreate",
+	"version": "0.0.1",
+	"build": "1",
+	"platform": "mobile",
+	"iosMinSdkVersion": "0.0.1",
+	"androidMinSdkVersion": "0.0.1",
+	"compileSdkVersion": "0.0.1",
+	"targetSdkVersion": "0.0.3",
+	"description": "一键备车创建页面入口",
+	"main": "index.js",
+	"scripts": {
+		"publish": "npm publish"
+	},
+	"author": "lili <202200933@any3.com>",
+	"license": "ISC",
+	"publishConfig": {
+		"registry": "http://tspdemo.changan.com.cn/nexus/repository/npmhosted/"
+	}
+}

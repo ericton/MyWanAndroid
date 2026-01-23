@@ -1,0 +1,24 @@
+{
+	"name": "@changan-incall/home-cartest-new",
+	"packageName": "micro.cn.com.qiyuan.cartestNew",
+	"version": "0.0.2",
+	"build": "2",
+	"platform": "mobile",
+	"iosMinSdkVersion": "0.0.1",
+	"androidMinSdkVersion": "0.0.1",
+	"compileSdkVersion": "0.0.1",
+	"targetSdkVersion": "0.0.3",
+	"description": "home-车辆诊断新版",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "xieyezi",
+	"license": "ISC",
+	"publishConfig": {
+		"registry": "http://tspdemo.changan.com.cn/nexus/repository/npmhosted/"
+	},
+	"dependencies": {
+		"vant": "^2.12.54"
+	}
+}

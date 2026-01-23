@@ -1,0 +1,27 @@
+{
+	"name": "@changan-incall/home-car-report",
+	"version": "0.0.21",
+	"description": "home-用车报告",
+	"packageName": "micro.cn.com.qiyuan.carReport",
+	"build": "21",
+	"platform": "mobile",
+	"iosMinSdkVersion": "0.0.1",
+	"androidMinSdkVersion": "0.0.1",
+	"compileSdkVersion": "0.0.1",
+	"targetSdkVersion": "0.0.3",
+	"main": "index.js",
+	"scripts": {},
+	"author": "202200933 <202200933@any3.com>",
+	"license": "ISC",
+	"publishConfig": {
+		"registry": "http://tspdemo.changan.com.cn/nexus/repository/npmhosted/"
+	},
+	"dependencies": {
+		"@vueuse/core": "^10.2.0",
+		"dayjs": "^1.11.11",
+		"html2canvas": "^1.4.1",
+		"lodash": "^4.17.21",
+		"vant": "^2.12.54",
+		"vue": "^2.7.1"
+	}
+}

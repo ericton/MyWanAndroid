@@ -1,0 +1,24 @@
+{
+	"name": "@changan-incall/home-security-guard",
+	"packageName": "micro.cn.com.qiyuan.securityGuard",
+	"version": "0.0.2",
+	"description": "home-安全守护",
+	"build": "2",
+	"platform": "mobile",
+	"iosMinSdkVersion": "0.0.1",
+	"androidMinSdkVersion": "0.0.1",
+	"compileSdkVersion": "0.0.1",
+	"targetSdkVersion": "0.0.3",
+	"main": "index.js",
+	"author": "xieyezi",
+	"license": "ISC",
+	"publishConfig": {
+		"registry": "http://tspdemo.changan.com.cn/nexus/repository/npmhosted/"
+	},
+	"scripts": {
+		"publish": "npm publish"
+	},
+	"dependencies": {
+		"vant": "^2.12.54"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"name": "@changan-incall/home-remote-upgrade-v2",
+	"version": "0.0.1",
+	"description": "home-远程升级",
+	"packageName": "micro.cn.com.qiyuan.remoteUpgradeV2",
+	"build": "1",
+	"platform": "mobile",
+	"iosMinSdkVersion": "0.0.1",
+	"androidMinSdkVersion": "0.0.1",
+	"compileSdkVersion": "0.0.1",
+	"targetSdkVersion": "0.0.3",
+	"main": "index.js",
+	"scripts": {},
+	"author": "202200933 <202200933@any3.com>",
+	"license": "ISC",
+	"publishConfig": {
+		"registry": "http://tspdemo.changan.com.cn/nexus/repository/npmhosted/"
+	},
+	"dependencies": {
+		"vant": "^2.12.54"
+	}
+}

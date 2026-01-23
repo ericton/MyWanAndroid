@@ -1,0 +1,24 @@
+{
+	"name": "@changan-incall/home-one-button-start",
+	"packageName": "micro.cn.com.qiyuan.oneButtonStart",
+	"version": "0.0.1",
+	"build": "1",
+	"platform": "mobile",
+	"iosMinSdkVersion": "0.0.1",
+	"androidMinSdkVersion": "0.0.1",
+	"compileSdkVersion": "0.0.1",
+	"targetSdkVersion": "0.0.3",
+	"description": "一键备车",
+	"main": "index.js",
+	"scripts": {
+		"publish": "npm publish"
+	},
+	"author": "lili <202200933@any3.com>",
+	"license": "ISC",
+	"publishConfig": {
+		"registry": "http://tspdemo.changan.com.cn/nexus/repository/npmhosted/"
+	},
+	"dependencies": {
+		"vant": "^2.12.54"
+	}
+}
