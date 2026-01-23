@@ -63,7 +63,7 @@ class MainActivity : FragmentActivity() {
         }
     }
     fun jacoco(view:View?){
-	//生成jacoco报告
+	//生成jacoco报告  
         JacocoHelper.generateEcFile(false,this)
     }
 
