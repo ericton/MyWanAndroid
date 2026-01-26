@@ -29,7 +29,7 @@ class SPUtils private constructor(context: Context, spName: String?, mode: Int) 
 
     /**
      * Return the single [SPUtils] instance
-     *
+     * 单例模式，全局只有一个sputil示例
      * @param spName The name of sp.
      * @param mode   Operating mode.
      * @return the single [SPUtils] instance
